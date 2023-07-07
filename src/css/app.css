@@ -1,0 +1,91 @@
+body {
+    background-color: var(--background-light-color);
+}
+
+#notebook-container {
+    width: 95vw;
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: auto;
+    background-image: var(--notebook-background-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "menu pokemons pokemons";
+    grid-template-columns: 186px 1fr 1fr;
+    grid-template-rows: min-content;
+}
+
+#notebook-container header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#notebook-container header h1 {
+    color: var(--header-title-font-color);
+}
+
+#notebook-container header .pokeball {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+#notebook-container.details {
+    padding-left: 190px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@media screen and (max-width: 1250px) {
+    #notebook-container {
+        grid-template-columns: 160px 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #notebook-container {
+        grid-template-areas: "header header header"
+                             "pokemons pokemons pokemons";
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #notebook-container {
+        grid-template-areas: "buttons buttons buttons"
+                             "header header header"
+                             "pokemons pokemons pokemons";
+        grid-template-rows: min-content min-content min-content;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #notebook-container.details {
+        padding-left: 140px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #notebook-container.details {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #notebook-container.details {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #notebook-container.details {
+        padding-left: 60px;
+    }
+}

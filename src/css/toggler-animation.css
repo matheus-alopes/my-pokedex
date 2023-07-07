@@ -1,0 +1,25 @@
+@keyframes moveUp {
+    0% {
+        top: 53px;
+    }
+    100% {
+        top: 3px;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        top: 3px;
+    }
+    100% {
+        top: 53px;
+    }
+}
+
+#toggler.up-animation {
+    animation: moveUp 1s forwards;
+}
+
+#toggler.down-animation {
+    animation: moveDown 1s forwards;
+}

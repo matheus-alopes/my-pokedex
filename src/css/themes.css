@@ -1,0 +1,91 @@
+:root {
+   --background-light-theme-image: url("../assets/images/notebook-white-page-background.jpg");
+   --background-dark-theme-image: url("../assets/images/notebook-black-page-background.jpg");
+
+   --pokemon-details-light-background-image: url("../assets/images/pokemon-details-light-background.jpg");
+   --pokemon-details-dark-background-image: url("../assets/images/pokemon-details-dark-background.jpg");
+
+   --back-button-light-image: url("../assets/images/left-arrow-black.png");
+   --back-button-dark-image: url("../assets/images/left-arrow-white.png");
+   
+   --background-light-color: #586565;
+   --background-dark-color: #161608f3;
+}
+
+#notebook-container.light  {
+   --notebook-background-image: var(--background-light-theme-image);
+   --pokemon-details-background-image: var(--pokemon-details-light-background-image);
+   --button-image: var(--back-button-light-image);
+   
+   --background-color: #586565;
+
+   --header-title-font-color: #000000;
+
+   --pokemon-list-container-color: #ff0000b3;
+   --pokemon-list-image-container-color: #ffffffb3;
+   --pokemon-list-image-border-color: #00000099;
+   --pokemon-list-name-font-color: #ffffff;
+   --pokemon-list-description-container-color: #ffffffb3;
+   --pokemon-list-description-border-color: #00000033;
+   --pokemon-list-description-font-color: #000000;
+
+   --box-shadow: #1d81eda4;;
+
+   --button-container-color: #f0f8ffb3;
+   --button-border-color: #f0f8ffb3;
+   --button-background-color: #f0f8ffb3;
+   --button-background-hover-color: #89cff0cc;
+   --button-font-color: #000000;
+
+
+   --details-container-color: #7393b333;
+   --pokemon-ability-container-color: #ffffffb3;
+   --pokemon-ability-name-container-color: #ff0000b3;
+   --pokemon-details-font-color: #000000;
+   --pokemon-details-border-color: #000000;
+   --pokemon-title-border-color: #000000;
+
+   --toggler-initial-position: 3px;
+
+   --filter-favorites-box-color: rgb(255, 243, 128, 0.6);
+   --filter-favorites-box-shadow: #1d81ed;
+}
+
+#notebook-container.dark {
+   --notebook-background-image: var(--background-dark-theme-image);
+   --pokemon-details-background-image: var(--pokemon-details-dark-background-image);
+   --button-image: var(--back-button-dark-image);
+
+   --background-color: #161608f3;
+
+   --header-title-font-color: #fffff0f3;
+
+   --pokemon-list-container-color: #550000b3;
+   --pokemon-list-image-container-color: #423d38b3;
+   --pokemon-list-image-border-color: #ececa499;
+   --pokemon-list-name-font-color: #fffff0f3;
+   --pokemon-list-description-container-color: #423d38b3;
+   --pokemon-list-description-border-color: #ececa433;
+   --pokemon-list-description-font-color: #fffff0;
+
+   --box-shadow: #1d81eda4;
+
+   --button-container-color: #2a3333b3;
+   --button-border-color: #171717b3;
+   --button-background-color: #525a5fb3;
+   --button-background-hover-color: #1c272bcc;
+   --button-font-color: #fffff0f3;
+
+   --details-container-color: #131920a4;
+   --pokemon-ability-container-color: #2d2828b3;
+   --pokemon-ability-name-container-color: #6e0606b3;
+   --pokemon-details-font-color: #fffff0f3;
+   --pokemon-details-border-color: #ffffff;
+   --pokemon-title-border-color: #ffffff;
+
+   --toggler-initial-position: 53px;
+
+
+   --filter-favorites-box-color: rgb(255, 243, 128, 0.2);
+   --filter-favorites-box-shadow: #1d81ed;
+}
